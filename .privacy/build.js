@@ -12,6 +12,10 @@ const B = require("./blocks");
 const ROOT = path.join(__dirname, "..");
 const CSS_VERSION = { studio: 3, testers: 4 };
 
+// Studio-Favicon (Logo K.) fuer Seiten, die nicht zu einem einzelnen Spiel gehoeren
+const studioIcons = (r) =>
+  `<link rel="icon" type="image/png" sizes="32x32" href="${r}favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="${r}favicon-192.png"><link rel="apple-touch-icon" href="${r}apple-touch-icon.png">`;
+
 function page(g) {
   const depth = g.file.split("/").length - 1;
   const r = "../".repeat(depth); // Weg zurueck zur Website-Wurzel
@@ -44,7 +48,7 @@ function page(g) {
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex,follow"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
 <title>${g.title}</title><meta name="description" content="${g.description}">
-<link rel="stylesheet" href="${rel(`studio.css?v=${CSS_VERSION.studio}`)}"><link rel="icon" href="${g.icon}"><link rel="stylesheet" href="${rel(`testers.css?v=${CSS_VERSION.testers}`)}"></head><body>
+<link rel="stylesheet" href="${rel(`studio.css?v=${CSS_VERSION.studio}`)}">${g.studioIcon ? studioIcons(r) : `<link rel="icon" href="${g.icon}">`}<link rel="stylesheet" href="${rel(`testers.css?v=${CSS_VERSION.testers}`)}"></head><body>
 <!-- Erzeugt von .privacy/build.js - Text in .privacy/games.js, hub.js bzw. blocks.js aendern. -->
 <a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="${home}" aria-label="K-Code Studio home"><span class="brand-mark" aria-hidden="true">K.</span><span>K-Code<span class="brand-light"> Studio</span></span></a>
 <nav aria-label="Main navigation"><a href="${home}#about">About</a><a class="tester-nav" href="${rel("testers.html")}">Become a Tester</a><a href="${rel("privacy/")}"${isHub ? ' aria-current="page"' : ""}>Privacy</a><a href="mailto:${B.MAIL}">Contact <span aria-hidden="true">↗</span></a></nav></header>
