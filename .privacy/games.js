@@ -11,13 +11,13 @@ const penguin = {
   file: "privacy.html", // Studio-Hauptseite, URL steht im Play Store -> nicht verschieben
   url: "https://kcodestudio.github.io/privacy.html",
   updated: "16 November 2026",
-  title: "Privacy Policy · K-Code Studio",
-  description: "Independent Android games from K-Code Studio. Explore our games, contact support and read our privacy policy.",
+  title: "Penguin to the Moon Privacy Policy · K-Code Studio",
+  description: "Privacy policy for Penguin to the Moon, an Android game by K-Code Studio.",
   icon: "penguin.png",
-  eyebrow: "K-CODE STUDIO",
-  intro: "Our website, our games and your privacy.",
+  eyebrow: "PENGUIN TO THE MOON",
+  intro: "How Penguin to the Moon handles your data.",
+  uses: "Optional rewarded video with Google Limited Ads for every player · optional online leaderboards via Google Play Games",
   covered: "Penguin to the Moon",
-  footerLabel: "Privacy Policy",
   sections: [
     { id: "section-1", title: "Who is responsible", html: B.who },
     { id: "section-2", title: "Scope and audience", html: (g, all) => `
@@ -97,7 +97,7 @@ const floatstone = {
   eyebrow: "FLOATSTONE",
   intro: "How Floatstone handles your data.",
   covered: "Floatstone (Android)",
-  footerLabel: "Floatstone Privacy Policy",
+  uses: "One optional rewarded video · Google consent form (UMP) where consent is required",
   ump: {
     preload: "one video is loaded in advance, so it is ready when you need it.",
     noConsent: "no ads are loaded and the game simply does not offer the “Continue” video.",
@@ -142,7 +142,7 @@ const vinora = {
   eyebrow: "VINORA",
   intro: "How Vinora handles your data.",
   covered: "Vinora (Android)",
-  footerLabel: "Vinora Privacy Policy",
+  uses: "Full-screen ads after every fifth crash and an optional rewarded video · Google consent form (UMP) where consent is required",
   ump: {
     preload: "one full-screen ad and one video are loaded in advance, so they are ready when needed.",
     noConsent: "no ads are loaded: no full-screen ads are shown and the “Continue” video is not offered.",
