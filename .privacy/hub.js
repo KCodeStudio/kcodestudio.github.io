@@ -11,7 +11,7 @@ module.exports = {
   updated: "16 November 2026",
   title: "Privacy · K-Code Studio",
   description: "Privacy at K-Code Studio: how our website works and the privacy policy of each of our Android games.",
-  icon: "../penguin.png",
+  icon: "../studio-icon.svg",
   eyebrow: "K-CODE STUDIO",
   heading: "Privacy",
   intro: "Our website, our games and your privacy.",
