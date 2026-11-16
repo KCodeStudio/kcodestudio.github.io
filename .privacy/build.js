@@ -43,10 +43,10 @@ function page(g) {
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex,follow"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
 <title>${g.title}</title><meta name="description" content="${g.description}">
-<link rel="stylesheet" href="${rel("studio.css")}"><link rel="icon" href="${g.icon}"><link rel="stylesheet" href="${rel("testers.css?v=3")}"></head><body>
+<link rel="stylesheet" href="${rel("studio.css?v=2")}"><link rel="icon" href="${g.icon}"><link rel="stylesheet" href="${rel("testers.css?v=4")}"></head><body>
 <!-- Erzeugt von .privacy/build.js - Text in .privacy/games.js bzw. .privacy/blocks.js aendern. -->
 <a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="${r || "./"}" aria-label="K-Code Studio home"><span class="brand-mark" aria-hidden="true">K.</span><span>K-Code<span class="brand-light"> Studio</span></span></a>
-<nav aria-label="Main navigation"><a href="${r || "./"}#games">Games</a><a class="tester-nav" href="${rel("testers.html")}">Become a Tester</a><a href="${rel("privacy.html")}"${isStudioPrivacy ? ' aria-current="page"' : ""}>Privacy</a><a href="mailto:${B.MAIL}">Contact <span aria-hidden="true">↗</span></a></nav></header>
+<nav aria-label="Main navigation"><a href="${r || "./"}#about">About</a><a class="tester-nav" href="${rel("testers.html")}">Become a Tester</a><a href="${rel("privacy.html")}"${isStudioPrivacy ? ' aria-current="page"' : ""}>Privacy</a><a href="mailto:${B.MAIL}">Contact <span aria-hidden="true">↗</span></a></nav></header>
 <main id="main"><div class="document-intro"><a class="back-link" href="${r || "./"}">← Back to studio</a><p class="eyebrow">${g.eyebrow}</p><h1>Privacy Policy</h1><p>${g.intro}</p><span class="updated">Last updated · ${g.updated}</span></div>
 <div class="policy-summary"><div><span>GAME COVERED</span><strong>${g.covered}</strong></div><div><span>PRIVACY CONTACT</span>${B.mail}</div></div>
 <div class="policy-grid"><aside><nav aria-label="Policy contents">
