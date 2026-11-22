@@ -141,7 +141,7 @@ const vinora = {
   name: "Vinora",
   file: "vinora/privacy.html",
   url: "https://kcodestudio.github.io/vinora/privacy.html",
-  updated: "16 November 2026",
+  updated: "22 November 2026",
   title: "Vinora Privacy Policy · K-Code Studio",
   description: "Privacy policy for Vinora, an Android game by K-Code Studio.",
   icon: "icon.png",
@@ -160,7 +160,7 @@ const vinora = {
   sections: [
     { id: "who", title: "Who is responsible", html: B.who },
     { id: "overview", title: "The game at a glance", html: `
-<p>Vinora is a one-touch arcade game for Android: hold to swing, release to fly, and get as far as you can before the fog catches you. The game is in English and is intended for players aged 13 and older. It is not directed at children under 13 and does not ask for your age.</p>
+<p>Vinora is a one-touch arcade game for Android: hold to swing, release to fly, and get as far as you can before the fog catches you. The game is in English and is intended for players aged 16 and older. It is not directed at children or at teenagers under 16 and does not ask for your age.</p>
 <p>Vinora has no user accounts, no sign-in, no online leaderboards, no chat, no in-app purchases and no analytics of its own. K-Code Studio does not run a server that receives data from the game. The only online features are the ads described in {ref:ads}. The game can be played completely without watching an optional video.</p>` },
     { id: "device", title: "Data stored on your device", html: () => `
 <p>The game saves your best distance, game statistics (number of attempts, total play time and total distance), story progress (for example whether the intro has been seen and how often the journey was completed) and your audio settings in the app's private storage on your device. Nothing else is saved by the game itself. Android cloud backup is disabled for Vinora, so this file is not copied to your Google account by the game.</p>
