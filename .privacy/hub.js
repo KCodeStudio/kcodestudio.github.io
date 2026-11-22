@@ -8,7 +8,7 @@ module.exports = {
   name: "our games",
   file: "privacy/index.html",
   url: "https://kcodestudio.github.io/privacy/",
-  updated: "16 November 2026",
+  updated: "22 November 2026",
   title: "Privacy · K-Code Studio",
   description: "Privacy at K-Code Studio: how our website works and the privacy policy of each of our Android games.",
   studioIcon: true,
