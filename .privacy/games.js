@@ -10,18 +10,18 @@ const penguin = {
   name: "Penguin to the Moon",
   file: "privacy.html", // Studio-Hauptseite, URL steht im Play Store -> nicht verschieben
   url: "https://kcodestudio.github.io/privacy.html",
-  updated: "22 November 2026",
+  updated: "24 November 2026",
   title: "Penguin to the Moon Privacy Policy · K-Code Studio",
   description: "Privacy policy for Penguin to the Moon, an Android game by K-Code Studio.",
   icon: "penguin.png",
   eyebrow: "PENGUIN TO THE MOON",
   intro: "How Penguin to the Moon handles your data.",
-  uses: "Designed for children aged 8 and older · non-personalized Google Limited Ads for every player · no Android advertising ID · local records and progress",
+  uses: "Designed for children aged 9 and older · non-personalized Google Limited Ads for every player · no Android advertising ID · local records and progress",
   covered: "Penguin to the Moon",
   sections: [
     { id: "section-1", title: "Who is responsible", html: B.who },
     { id: "section-2", title: "Scope and audience", html: (g, all) => `
-<p>This privacy policy covers this website and Penguin to the Moon, an English-language Android game designed primarily for children aged 8 and older, including children under 13. Parents and guardians can read here how the game handles children&#x27;s data. The game does not ask for a date of birth or age group and does not verify players&#x27; ages.</p>
+<p>This privacy policy covers this website and Penguin to the Moon, an English-language Android game designed primarily for children aged 9 and older, including children under 13. Parents and guardians can read here how the game handles children&#x27;s data. The game does not ask for a date of birth or age group and does not verify players&#x27; ages.</p>
 <p>Beginning with version 108 (0.48.16), the game has no player accounts, sign-in or online leaderboards. Scores and reached heights are kept as local records on your device and are not submitted to an online ranking service. Earlier versions used Google Play Games as described in {ref:section-10}. The game has no chat or purchases with real money. Points, equipment and skins are virtual game progress.</p>
 <p>A future game is covered by this policy only after it is identified here and any different data practices are described. Website hosting and support are explained separately from in-game processing.</p>
 <p>Other K-Code Studio games are not covered by this policy. They have their own privacy policies because their advertising and consent setup is different: ${all
